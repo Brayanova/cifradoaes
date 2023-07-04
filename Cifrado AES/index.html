@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de AES</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="OIP (1).jpg">
+    <img src="35056.gif" alt="GIF" style="position: fixed; bottom: 10px; left: 10px; width: 130px; height: 180px;">
+
+
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+
+    <div class="container">
+        <div class="content">
+            <p>Cifrado Aes de confianza</p>
+            <br>
+            <strong>Mensaje a cifrar:</strong>
+            <input type="text" id="mensaje" />
+            <br>
+            <strong>Mensaje cifrado:</strong>
+            <span id="demo1"></span>
+            <br>
+            <strong>Mensaje descifrado:</strong>
+            <span id="demo2"></span>
+            <br>
+            <strong>Mensaje descifrado con formato de cadena:</strong>
+            <span id="demo3"></span>
+            <br>
+            <br>
+            <label for="key-size">Seleccione el tamaño de la llave AES:</label>
+            <select id="key-size">
+                <option value="128">128 bits</option>
+                <option value="192">192 bits</option>
+                <option value="256">256 bits</option>
+            </select>
+            <br>
+            <label for="key">Ingrese la llave AES:</label>
+            <input type="text" id="key" />
+            <br>
+            <button onclick="cifrarAES()">Cifrar</button>
+            <button onclick="descifrarAES()">Descifrar</button>
+        </div>
+    </div>
+
+    <script src="./aes.js"></script>
+</body>
+
+</html>

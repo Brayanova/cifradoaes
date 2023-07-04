@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    -webkit-text-fill-color: #ccc;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration-color: black;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    -webkit-text-fill-color: #212121;
+
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#demo1,
+#demo2,
+#demo3 {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+@keyframes circle-in-center {
+    from {
+      clip-path: circle(0% at center);
+    }
+    to {
+      clip-path: circle(125% at center);
+    }
+  }
+  
+  .animate-circle {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-center both;
+}
+
+@keyframes circle-out-center {
+    from {
+        clip-path: circle(125% at center);
+    }
+    to {
+        clip-path: circle(0% at center);
+    }
+}
+
+.animate-circle-out {
+    animation: 1.5s cubic-bezier(.25, 1, .30, 1) circle-out-center both;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('61-619487_one-piece-wallpaper-4k.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
